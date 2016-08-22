@@ -314,7 +314,7 @@ module Hyperkit
           environment: opts[:environment] || {},
           "wait-for-websocket" => options[:websocket] || false,
           interactive: options[:interactive] || false
-        }).metadata
+        })
 
         handle_async(response, options[:sync])
 
